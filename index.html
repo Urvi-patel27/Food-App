@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
+        form { max-width: 400px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
+        button { padding: 10px; background: blue; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>User Data Form</h2>
+    <form id="userForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('userForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            const response = await fetch('http://localhost:3000/send-email', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, email, message })
+            });
+
+            const result = await response.json();
+            alert(result.message);
+        });
+    </script>
+
+</body>
+</html> -->

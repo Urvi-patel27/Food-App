@@ -1,0 +1,138 @@
+.footer {
+  color: white;
+  background: #323232;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  gap: 30px;
+  padding: 30px 100px;
+  padding-top: 60px;
+  /* width: 1200px; */
+  top: 0;
+  left: 0;
+
+}
+.footer-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 80px;
+}
+.logo {
+  width: 180px;
+  margin: 0;
+}
+.footer-content-left,
+.footer-content-right,
+.footer-content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.footer-content-left li,
+.footer-content-right li,
+.footer-content-center li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.footer-content-right h2,
+.footer-content-center h2 {
+  color: white;
+}
+.footer hr {
+  width: 100%;
+  height: 4px;
+  margin: 10px 0px;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 10%;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-content-left,
+.footer-content-center,
+.footer-content-right {
+  flex: 1;
+  margin: 10px;
+  text-align: left;
+}
+
+.footer-content-left {
+  flex: 2;
+}
+
+.footer-content-center h1,
+.footer-content-right h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-center-icons img {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+footer .footer-copyright {
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #555;
+}
+
+.hover\:text-red-500:hover {
+  color: #f56565;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content-left,
+  .footer-content-center,
+  .footer-content-right {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-content-left {
+    flex: unset;
+  }
+
+  /* .footer-center-icons img {
+    width: 90px;
+  } */
+
+  .footer-content-center h1,
+  .footer-content-right h2 {
+    font-size: 1.2rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.9rem;
+  }
+}
